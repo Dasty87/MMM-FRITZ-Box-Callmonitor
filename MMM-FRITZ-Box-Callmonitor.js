@@ -247,17 +247,17 @@ Module.register("MMM-FRITZ-Box-Callmonitor", {
 			var callWrapper = document.createElement("tr");
 			callWrapper.className = "normal";
 
-			//Set caller of row
-			var caller =  document.createElement("td");
-			caller.innerHTML = calls[i].caller;
-			caller.className = "title bright";
-			callWrapper.appendChild(caller);
-
 			//Set time of row
 			var time =  document.createElement("td");
 			time.innerHTML = moment(calls[i].time).fromNow();
 			time.className = "time light xsmall";
 			callWrapper.appendChild(time);
+
+			//Set caller of row
+			var caller =  document.createElement("td");
+			caller.innerHTML = calls[i].caller;
+			caller.className = "title bright";
+			callWrapper.appendChild(caller);
 
 			//Add to wrapper
 			wrapper.appendChild(callWrapper);
