@@ -262,7 +262,6 @@ Module.register("MMM-FRITZ-Box-Callmonitor", {
 			//Add to wrapper
 			wrapper.appendChild(callWrapper);
 
-
 			// Create fade effect by MichMich (MIT)
 			if (this.config.fade && this.config.fadePoint < 1) {
 				if (this.config.fadePoint < 0) {
